@@ -1,0 +1,92 @@
+
+#menu{
+    width: 96%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: -17px;
+
+    z-index: 1;
+}
+
+#top-line-long{
+    width: 94%;
+    height: 3px;
+
+    background-image: linear-gradient(90deg, transparent, var(--accentColor) 8%);
+
+    border-radius: 8px 0 0 8px;
+}
+
+#top-line-short{
+    width: 6%;
+    height: 3px;
+
+    background-image: linear-gradient(90deg, var(--accentColor) 65%, transparent);
+
+    border-radius: 0 8px 8px 0;
+}
+
+.first-element{
+    border-left: 3px solid var(--accentColor);
+    border-radius: 8px 0 0 8px;
+}
+
+/* .first-element:hover{
+    border-left: 3px solid var(--accentColor);
+} */
+
+.last-element{
+    border-right: 3px solid var(--accentColor);
+    border-radius: 0 8px 8px 0;
+}
+
+/* .last-element:hover{
+    border-right: 3px solid var(--accentColor);
+} */
+
+
+.menu-button{
+    padding-left: 32px;
+    padding-right: 32px;
+
+    height: 35px;
+    /* width: 100px; */
+    white-space: nowrap;
+
+    border-top: 3px solid var(--secondaryColor);
+    border-bottom: 3px solid var(--secondaryColor);
+
+    text-align: center;
+    line-height: 35px;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: ease-in-out .15s;
+
+    cursor: pointer;
+}
+
+.active{
+    color: var(--accentColor);
+    border-top: 3px solid var(--accentColor);
+    border-bottom: 3px solid var(--accentColor);
+}
+
+.active.first-element{
+    border-left: 3px solid var(--accentColor);
+}
+
+.active.last-element{
+    border-right: 3px solid var(--accentColor);
+}
+
+.menu-button:hover{
+    color: var(--accentColor);
+    border-top: 3px solid var(--accentColor);
+    border-bottom: 3px solid var(--accentColor);
+}
