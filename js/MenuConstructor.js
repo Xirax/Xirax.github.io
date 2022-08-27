@@ -9,6 +9,16 @@ class MenuConstructor{
             {page: '#education-p', text: 'Wykształcenie'},
             {page: '#portfolio-p', text: 'Kontakt'},
         ]
+
+
+        let buttons = document.getElementsByClassName('menu-button');
+
+        for(let i=0; i<buttons.length; i++){
+            buttons[i].addEventListener('click', (ev) => {
+                if(document.getElementById('mobile-menu').checked == true)
+                    document.getElementById('hamburger').click();
+            })
+        }
     }
 
 
@@ -48,8 +58,6 @@ class MenuConstructor{
 
     toggleMobileMenu(){
         let menu = document.getElementsByTagName('nav')[0];
-
-        console.log(menu.style.height);
 
         if(menu.style.height == '') menu.style.height = '0px';
 

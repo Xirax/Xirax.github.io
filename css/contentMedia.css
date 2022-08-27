@@ -1,14 +1,24 @@
 
 @media(max-width: 950px){
 
+    .title-header{
+        width: 91%;
+    }
+
+    .showcase{
+        width: 65%;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 560px){
+
     .standard-text{
         font-size: 15px;
         width: 74%;
     }
 
-    .title-header{
-        width: 91%;
-    }
 
     .line-title{
         font-size: 20px;
@@ -20,10 +30,8 @@
     }
 
     .icon{
-        width: 18px;
-        height: 18px;
-    
-        margin-right: 12px;
+        width: 19px;
+        height: 19px;
     }
 
 
@@ -32,11 +40,6 @@
 
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .showcase{
-        width: 65%;
-        align-items: center;
     }
 
     li{

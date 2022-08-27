@@ -2,7 +2,7 @@
 class Skills{
 
     constructor(){
-        this.skills = [40, 60, 60, 70, 70, 80, 70, 60, 30, 20, 80, 10];
+        this.skills = [40, 60, 60, 70, 70, 80, 70, 60, 30, 30, 80, 10];
     }
 
     applySkills(){
