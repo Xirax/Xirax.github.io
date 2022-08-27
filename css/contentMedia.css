@@ -1,0 +1,47 @@
+
+@media(max-width: 950px){
+
+    .standard-text{
+        font-size: 15px;
+        width: 74%;
+    }
+
+    .title-header{
+        width: 91%;
+    }
+
+    .line-title{
+        font-size: 20px;
+    }
+
+    .signed-icon{
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .icon{
+        width: 18px;
+        height: 18px;
+    
+        margin-right: 12px;
+    }
+
+
+    .rating-frame{
+        width: 100%;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .showcase{
+        width: 65%;
+        align-items: center;
+    }
+
+    li{
+        font-size: 16px;
+    }
+}
+
+

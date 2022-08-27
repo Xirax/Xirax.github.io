@@ -24,4 +24,4 @@ class AutoTyper{
 }
 
 
-AutoTyper.typeFromElement('description');
+//AutoTyper.typeFromElement('description');

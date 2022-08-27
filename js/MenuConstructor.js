@@ -7,7 +7,7 @@ class MenuConstructor{
             {page: '#skills-p', text: 'Umiejętności'},
             {page: '#experience-p', text: 'Doświadczenie'},
             {page: '#education-p', text: 'Wykształcenie'},
-            {page: '#portfolio-p', text: 'Kontakt'}
+            {page: '#portfolio-p', text: 'Kontakt'},
         ]
     }
 
@@ -22,23 +22,12 @@ class MenuConstructor{
             menuButton.classList.add('menu-button');
             menuButton.classList.add('hue');
 
-
-           // menuButton.onclick = 'alert("JEBAĆ")';
-
-            console.log(menuButton);
-          //  menuButton.addEventListener('mouseover', () => { alert("JEBAĆ!"); })
-
             menu.appendChild(menuButton);
         })
 
         let allButtons = document.getElementsByClassName('menu-button');
         allButtons[0].classList.add('first-element');
         allButtons[allButtons.length - 1].classList.add('last-element');
-
-        allButtons[0].addEventListener('click', () => { alert("JEBAĆ!"); } );
-        allButtons[0].onclick = () => {alert("JEBAĆ")};
-
-        console.log(allButtons[0]);
 
         this.selectActivePage(0);
 
@@ -47,7 +36,6 @@ class MenuConstructor{
 
     selectActivePage(btnIndex){
 
-        console.log('CALLED TO ' + btnIndex);
         let buttons = document.getElementsByClassName('menu-button');
 
         for(let i=0; i<buttons.length; i++){
@@ -56,8 +44,28 @@ class MenuConstructor{
 
         buttons[btnIndex].classList.add('active');
     }
+
+
+    toggleMobileMenu(){
+        let menu = document.getElementsByTagName('nav')[0];
+
+        console.log(menu.style.height);
+
+        if(menu.style.height == '') menu.style.height = '0px';
+
+        if(menu.style.height == '0px'){
+            menu.style.height = '100vh';
+        }else{
+            menu.style.height = '0px';
+        }
+    }
 }
 
 
-let menuConstructor = new MenuConstructor();
-menuConstructor.construct();
+ let menuConstructor = new MenuConstructor();
+// menuConstructor.construct();
+
+
+document.getElementById('hamburger').addEventListener('click', (ev) => {
+    menuConstructor.toggleMobileMenu();
+})

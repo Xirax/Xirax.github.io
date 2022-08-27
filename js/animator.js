@@ -58,12 +58,12 @@ function changePage(index){
     menuConstructor.selectActivePage(index);
 }
 
-let skills = document.getElementById('skills');
-let interests = document.getElementById('interests');
-let experience = document.getElementById('experience');
-let otherSkills = document.getElementById('other-skills');
-let education = document.getElementById('education');
-let contact = document.getElementById('portfolio');
+let skills = document.getElementById('skills-p');
+let interests = document.getElementById('interests-p');
+let experience = document.getElementById('experience-p');
+let otherSkills = document.getElementById('other-skills-p');
+let education = document.getElementById('education-p');
+let contact = document.getElementById('portfolio-p');
 
 let STEP_TIME = 200;
 

@@ -12,6 +12,13 @@
     z-index: 1;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #top-line-long{
     width: 94%;
     height: 3px;
@@ -35,18 +42,10 @@
     border-radius: 8px 0 0 8px;
 }
 
-/* .first-element:hover{
-    border-left: 3px solid var(--accentColor);
-} */
-
 .last-element{
     border-right: 3px solid var(--accentColor);
     border-radius: 0 8px 8px 0;
 }
-
-/* .last-element:hover{
-    border-right: 3px solid var(--accentColor);
-} */
 
 
 .menu-button{
@@ -54,7 +53,6 @@
     padding-right: 32px;
 
     height: 35px;
-    /* width: 100px; */
     white-space: nowrap;
 
     border-top: 3px solid var(--secondaryColor);
@@ -79,6 +77,7 @@
 
 .active.first-element{
     border-left: 3px solid var(--accentColor);
+    border-radius: 8px 0 0 8px;
 }
 
 .active.last-element{
@@ -89,4 +88,52 @@
     color: var(--accentColor);
     border-top: 3px solid var(--accentColor);
     border-bottom: 3px solid var(--accentColor);
+}
+
+
+.hamburger{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+
+    display: none;
+
+    margin-top: -40px;
+    margin-right: -50px;
+}
+
+
+.hamburger-line {
+    background: var(--secondaryColor);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    border-radius: 5px;
+    
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+    background: var(--secondaryColor);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+.hamburger-line::before{
+    top: 6px;
+}
+
+.hamburger-line::after{
+    top: -6px;
+}
+
+.mobile-menu{
+    display: none;
 }

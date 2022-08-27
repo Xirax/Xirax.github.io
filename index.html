@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/content.css" />
     <link rel="stylesheet" href="./css/animations.css" />
 
+    <link rel="stylesheet" href="./css/menuMedia.css" />
+    <link rel="stylesheet" href="./css/contentMedia.css" />
 
 
 </head>
@@ -18,28 +20,42 @@
 
     <div class="background-filter"></div>
 
+    <!-- <header> -->
+
     <div id="header">
         <p id="header-title"> Aleksander Gacek </p>
-        <!-- <img id="header-image" src="./imgs/others/kot.jpg" /> -->
     </div>
 
-    <nav id="menu">
-        <div id="top-line-long" class="hue"></div>
-    </nav>
+
+
+    <div id="menu">
+
+        <div id="top-line-long" class="hue">
+            <input class="mobile-menu" type="checkbox" id="mobile-menu"/>
+            <label id="hamburger" class="hamburger" for="mobile-menu"><span class="hamburger-line"></span></label>
+        </div>
+        
+        <nav>
+            <a href="#description" class="menu-button hue first-element active"> O mnie </a> 
+            <a href="#skills-p" class="menu-button hue"> Umiejętności </a>
+            <a href="#experience-p" class="menu-button hue"> Doświadczenie </a> 
+            <a href="#education-p" class="menu-button hue"> Wykształcenie </a> 
+            <a href="#portfolio-p" class="menu-button hue last-element"> Kontakt </a>    
+        </nav>
+        <div id="top-line-short" class="hue"></div>  
+    </div>
+
+    <!-- </header> -->
 
     <div id="content">
         <p class="standard-text" id="description">
-            Informatyką oraz programowaniem interesuje się już od najmłodszych lat. To co tak bardzo zafascynowało mnie w komputerach to fakt, że mogę 
-            wydać im dowolne polecenie a te je wykonają bez większego trudu. Ograniczeniem jest jedynie nasza kreatywność i wyobraźnia. Swoją przygodę 
-            zacząłem od programów konsolowych w C++, nurt fascynacji zabrał mnie dalej i tak płynąłem z nim przez piękne programistyczne wyspy języków. Poznałem C#, 
-            Pythona, nauczyłem się projektować strony internetowe a przy nich poznałem język Javascript. Ten ostatni przywidół mnie do brzegu - do Typescripta, który rozwiązał 
-            wszystko co nie podobało mi się w jego rodzicu i to właśnie TS stał się obecnie moim ulubieńcem. Obecnie projektuje w nim aplikacje webowe, zarówno frontend 
-            jak i backend, poznałem wiele różnych frameworków, w tym nodeJS. Moja dotychczasowa przygoda uświadomiła mi wagę słów Sokratesa - "Wiem, że nic nie wiem".
-            Poznając jak obszerny jest świat programowania zyskałem świadomość, że przede mną jeszcze długa droga. Nie jest to jednak wcale zniechęcające, wręcz przeciwnie.
-            Powtarzam sobie zawsze "Wiem niewiele, ale chce wiedzieć więcej" i jak na razie nie brakuje mi motywacji by iść dalej. To bez wątpienia jest mój świat.
+            Informatyką oraz programowaniem interesuje się już od najmłodszych lat. To co tak bardzo zafascynowało mnie w komputerach to fakt, 
+            że mogę wydać im dowolne polecenie a te je wykonają bez większego trudu. Ograniczeniem jest jedynie nasza kreatywność i wyobraźnia. 
+            Uczyłem się coraz więcej i więcej a moja ciekawość ciągle rosła z każdym kolejnym krokiem. Ogrom wiedzy w 
+            tej branży jest jak studnia bez dna, ale wciąż jestem na tyle zmotywowany, aby przynajmniej spróbować ją wysuszyć. 
         </p>
 
-        <div class="title-header">
+        <div class="title-header" id="interests-p">
             <div class="line-title"> <div class="hue"> Zainteresowania </div>  </div>
             <div class="split-line hue"></div>
         </div>
@@ -161,6 +177,22 @@
 
             <div class="rating-frame">
                 <div class="signed-icon long">
+                    <img src="./imgs/logos/dNET.png" class="icon" />
+                    <p> .NET Framework </p>
+                </div>
+                <div class="rating-line"></div>
+            </div>
+
+            <div class="rating-frame">
+                <div class="signed-icon long">
+                    <img src="./imgs/logos/tensorflow.png" class="icon" />
+                    <p> Tensorflow Framework </p>
+                </div>
+                <div class="rating-line"></div>
+            </div>
+
+            <div class="rating-frame">
+                <div class="signed-icon long">
                     <img src="./imgs/logos/english.png" class="icon" />
                     <p> Język Angielski </p>
                 </div>
@@ -177,7 +209,7 @@
 
         </div>
 
-        <div class="title-header">
+        <div class="title-header" id="other-skills-p">
             <div class="line-title"> <div class="hue"> Inne umiejętności </div> </div>
             <div class="split-line hue"></div>
         </div>
@@ -198,13 +230,13 @@
 
 
         <ul id="experience">
-            <li> Praktyka zawodowa ABB Sp. z o.o. - Projektowanie panelu zarządzania na frameworku flask (2 miesiące) </li>
-            <li> Praktyka zawodowa Titanite Games -  Praca w zespole nad grą komputerową w C# na silniku Unity (2 miesiące) </li>
-            <li> Praktyka zawodowa Itel Sp. z o.o. - Programowanie sterowników do systemu kontroli dostępu (3 miesiące) </li>
+            <li> Praktyka zawodowa ABB Sp. z o.o. - Projektowanie panelu zarządzania na frameworku flask (1 miesiąc) </li>
+            <li> Praktyka zawodowa Titanite Games -  Praca w zespole nad grą komputerową w C# na silniku Unity (1 miesiąc) </li>
+            <li> Praktyka zawodowa Itel Sp. z o.o. - Montaż sieci LAN / zaopatrzenie sprzętowe / programowanie sterowników kontroli dostępu (3 miesiące) </li>
         </ul>
 
         <div class="title-header" id="education-p">
-            <div class="line-title hue"> Wykształcenie</div>
+            <div class="line-title hue"> Wykształcenie </div>
             <div class="split-line hue"></div>
         </div>
 

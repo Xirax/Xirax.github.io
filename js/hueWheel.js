@@ -3,9 +3,6 @@ class HueWheel{
 
     animate(hueVal){
         let hues = document.getElementsByClassName('hue');
-        // console.log('rotating');
-
-        console.log(hueVal);
 
         for(let i=0; i<hues.length; i++){
             hues[i].style.filter = 'hue-rotate(' + hueVal + 'deg)';

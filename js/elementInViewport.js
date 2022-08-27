@@ -4,9 +4,8 @@ class ViewportController{
     static checkIfInViewportAndRunScript(element, tickTime, script, menuSetter = undefined){
 
         const rect = element.getBoundingClientRect();
-        if(rect.top >= 0 && rect.left >= 0 && 
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)){
+        
+        if((rect.bottom + 120) <= (window.innerHeight || document.documentElement.clientHeight)){
 
             if(menuSetter != undefined) this.keepMenu(element, tickTime, menuSetter);
             script();
@@ -21,9 +20,8 @@ class ViewportController{
 
     static keepMenu(element, tickTime, menuSetter){
         const rect = element.getBoundingClientRect();
-        if(rect.top >= 0 && rect.left >= 0 && 
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)){
+
+        if((rect.bottom + 120) <= (window.innerHeight || document.documentElement.clientHeight)){
 
             menuSetter();
         }
