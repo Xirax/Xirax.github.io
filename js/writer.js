@@ -1,4 +1,4 @@
-const WRITE_SPEED = 62;
+const WRITE_DELAY = 45;
 const PHRASE_CHANGE_SPEED = 3500;
 const QUOTE_WORDS_BASE = ['creative', 'motivated', 'ambitious', 'open-minded', 'focused', 'chilled out', 'stubborn', 'prepared', 'conscious', 'productive', 'patient', 'kind'];
 var NOT_USED_WORDS = [...QUOTE_WORDS_BASE];
@@ -22,7 +22,7 @@ async function writeText(elementID, phrase='', delayTime=0){
                 clearInterval(intv);
                 resolve();
             }
-        }, WRITE_SPEED);
+        }, WRITE_DELAY);
     })
 }
 
@@ -53,7 +53,7 @@ function clearText(elementID){
                 clearInterval(intv);
                 resolve();
             } 
-        }, WRITE_SPEED)
+        }, WRITE_DELAY)
     })
 
 
@@ -79,10 +79,10 @@ function selectNewWord(){
 
 
 async function runEverything(){
-    await writeText('welcome-phrase', 'Welcome to my world', 800);
+    await writeText('welcome-phrase', 'Welcome to my world', 600);
     let quoteWord = selectNewWord();
-    let quoteText = 'Maybe let\'s try by more ' + quoteWord + ' today...'; 
-    await writeText('quote', quoteText, 800);
+    let quoteText = 'Maybe let\'s try be more ' + quoteWord + ' today...'; 
+    await writeText('quote', quoteText, 600);
     document.getElementById('quote').innerHTML = 'Maybe let\'s try by more <em id="changing-word">' + quoteWord + '</em> today...<em id="writing-pointer">\\<em>';
     await delay(PHRASE_CHANGE_SPEED);
     rewirteFromBase();
