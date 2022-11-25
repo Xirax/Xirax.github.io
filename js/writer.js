@@ -1,6 +1,6 @@
 const WRITE_SPEED = 62;
 const PHRASE_CHANGE_SPEED = 3500;
-const QUOTE_WORDS_BASE = ['creative', 'motivated', 'ambitious', 'open-minded', 'focused', 'chilled out', 'stubborn', 'prepared'];
+const QUOTE_WORDS_BASE = ['creative', 'motivated', 'ambitious', 'open-minded', 'focused', 'chilled out', 'stubborn', 'prepared', 'conscious', 'productive', 'patient', 'kind'];
 var NOT_USED_WORDS = [...QUOTE_WORDS_BASE];
 
 async function writeText(elementID, phrase='', delayTime=0){
