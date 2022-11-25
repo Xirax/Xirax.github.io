@@ -1,0 +1,123 @@
+
+#landing-page{
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+
+    height: 100vh;
+    width: 100%;
+
+    background-image: url('../imgs/bcg/ITB.jpg');
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-sizing: border-box;
+}
+
+#filter{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgba(64, 56, 56, 0.84); 
+
+    animation-name: transparency-in;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+#welcome-phrase{
+    font-size: 76px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#quote{
+    font-size: 22px;
+    color: white;
+}
+
+#writing-pointer{
+    animation-name: blink;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    transform: rotate(90deg);
+}
+
+#changing-word{
+    text-decoration: none;
+    font-style: normal;
+}
+
+#page-arrow{
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 32.5px);
+
+    z-index: 10;
+
+    width: 65px;
+    height: 65px;
+
+    object-fit: scale-down;
+
+    animation-name: float, fade-in;
+    animation-duration: 1.2s, 4s;
+    animation-iteration-count: infinite, 1;
+    animation-timing-function: ease-in-out;
+
+    transition: ease-in-out 0.15s;
+}
+
+#page-arrow:hover{
+    width: 70px;
+    height: 70px;
+}
+
+.putCurtainUp{
+    animation-name: curtainUp;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes curtainUp {
+    0%{ top: 0; }
+    100%{ top: -100%; }
+}
+
+@keyframes fade-in {
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+
+@keyframes transparency-in {
+    0%{ background-color: rgba(64, 56, 56, 1); }
+    100%{ background-color: rgba(64, 56, 56, 0.84); }
+}
+
+@keyframes float {
+    0%{ bottom: 25px; }
+    50%{ bottom: 18px; }
+    100%{ bottom: 25px; }
+}
+
+@keyframes blink {
+    0%{ opacity: 1; }
+    50%{ opacity: 0; }
+    100%{ opacity: 1; }
+}

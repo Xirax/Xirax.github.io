@@ -1,284 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gacek Portfolio </title>
+    <title> Welcome to my world </title>
 
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/landingpage.css" />
+    <link rel="stylesheet" href="./css/hobbyblocks.css" />
+    <link rel="stylesheet" href="./css/section.css" />
+    <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/content.css" />
-    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
-    <link rel="stylesheet" href="./css/menuMedia.css" />
-    <link rel="stylesheet" href="./css/contentMedia.css" />
 
 
 </head>
 <body>
 
-    <div class="background-filter"></div>
-
-    <!-- <header> -->
-
-    <div id="header">
-        <p id="header-title"> Aleksander Gacek </p>
-    </div>
-
-
-
-    <div id="menu">
-
-        <div id="top-line-long" class="hue">
-            <input class="mobile-menu" type="checkbox" id="mobile-menu"/>
-            <label id="hamburger" class="hamburger" for="mobile-menu"><span class="hamburger-line"></span></label>
-        </div>
-        
-        <nav>
-            <a href="#description" class="menu-button hue first-element active"> O mnie </a> 
-            <a href="#skills-p" class="menu-button hue"> Umiejętności </a>
-            <a href="#experience-p" class="menu-button hue"> Doświadczenie </a> 
-            <a href="#education-p" class="menu-button hue"> Wykształcenie </a> 
-            <a href="#portfolio-p" class="menu-button hue last-element"> Kontakt </a>    
-        </nav>
-        <div id="top-line-short" class="hue"></div>  
-    </div>
-
-    <!-- </header> -->
-
-    <div id="content">
-        <p class="standard-text" id="description">
-            Informatyką oraz programowaniem interesuje się już od najmłodszych lat. To co tak bardzo zafascynowało mnie w komputerach to fakt, 
-            że mogę wydać im dowolne polecenie a te je wykonają bez większego trudu. Ograniczeniem jest jedynie nasza kreatywność i wyobraźnia. 
-            Uczyłem się coraz więcej i więcej a moja ciekawość ciągle rosła z każdym kolejnym krokiem. Ogrom wiedzy w 
-            tej branży jest jak studnia bez dna, ale wciąż jestem na tyle zmotywowany, aby przynajmniej spróbować ją wysuszyć. 
-        </p>
-
-        <div class="title-header" id="interests-p">
-            <div class="line-title"> <div class="hue"> Zainteresowania </div>  </div>
-            <div class="split-line hue"></div>
+        <div id="landing-page">
+            <div id="filter">
+                <p id="welcome-phrase"> </p>
+                <p id="quote"></p>
+                <img id="page-arrow" src="./imgs/icons/arrow.png" onclick="curtainUp()"/>
+            </div>
         </div>
 
-        <div class="showcase" id="interests">
+        <div style="width: 100%;">
 
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/PC.png" class="icon" />
-                <p> Informatyka </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/program.png" class="icon" />
-                <p> Programowanie </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/science.png" class="icon" />
-                <p> Nauka </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/camera.png" class="icon" />
-                <p> Fotografia </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/film.png" class="icon" />
-                <p> Kinematografia </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/rocket.png" class="icon" />
-                <p> Astronomia </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/plane.png" class="icon" />
-                <p> Lotnictwo </p>
-            </div>
-
-            <div class="signed-icon ints"> 
-                <img src="./imgs/icons/ball.png" class="icon" />
-                <p> Koszykówka </p>
-            </div>
-
-        </div>
-
-        <div class="title-header" id="skills-p">
-            <div class="line-title"> <div class="hue"> Umiejętności </div>  </div>
-            <div class="split-line hue"></div>
-        </div>
-
-        <div class="showcase" id="skills">
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/cpp_logo.png" class="icon" />
-                    <p> Język C++ </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/cs_logo.png" class="icon" />
-                    <p> Język C# </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/python_logo.png" class="icon" />
-                    <p> Język Python </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/js_logo.png" class="icon" />
-                    <p> Język Javascript </p>
-                </div>
-                <div class="rating-line"></div>
+            <div id="menu">
+            
+                <div id="menu-line"></div>
+    
+                <!-- <div id="hamburger-icon">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div> -->
             </div>
             
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/ts_logo.png" class="icon" />
-                    <p> Język Typescript </p>
-                </div>
-                <div class="rating-line"></div>
+        </div>
+
+ 
+
+
+        <div id="first-section" class="section"> O mnie </div>
+        <div class="section-content section-scroll">
+            <div class="section-element">
+                <img src="./imgs/people/me.jpg" class="about-icon" />
+                <p class="section-text">
+                    There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, or 
+                    randomised words which don't look even slightly believable. If you are going to use a passage of Lorem 
+                    Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem 
+                    Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                </p>
+            </div>
+        </div>
+
+        <div class="section"> Hobby </div>
+
+        <div id="hobby-blocks" class="section-scroll"> 
+
+            <div class="hobby-block color1 clickable firs-block">
+                <img class="hobby-icon" src="./imgs/icons/tech.png" />
+                <p class="hobby-title"> Informatyka </p>
             </div>
 
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/html_logo.png" class="icon" />
-                    <p> HTML i CSS </p>
-                </div>
-                <div class="rating-line"></div>
+            <a class="hobby-block color2 clickable" href="./html/programming.html">
+                <img class="hobby-icon" src="./imgs/icons/program.png" />
+                <p class="hobby-title"> Programowanie </p>
+            </a>
+
+            <div class="hobby-block color1">
+                <img class="hobby-icon" src="./imgs/icons/camera.png" />
+                <p class="hobby-title"> Fotografia </p>
             </div>
 
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/node_logo.png" class="icon" />
-                    <p> NodeJS Framework </p>
-                </div>
-                <div class="rating-line"></div>
+            <div class="hobby-block color2">
+                <img class="hobby-icon" src="./imgs/icons/film.png" />
+                <p class="hobby-title"> Kinematografia </p>
             </div>
 
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/react_logo.png" class="icon" />
-                    <p> ReactJS Framework </p>
-                </div>
-                <div class="rating-line"></div>
+            <div class="hobby-block color1">
+                <img class="hobby-icon" src="./imgs/icons/plane.png" />
+                <p class="hobby-title"> Lotnictwo </p>
             </div>
 
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/dNET.png" class="icon" />
-                    <p> .NET Framework </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/mognodb.png" class="icon" />
-                    <p> MongoDB </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/english.png" class="icon" />
-                    <p> Język Angielski </p>
-                </div>
-                <div class="rating-line"></div>
-            </div>
-
-            <div class="rating-frame">
-                <div class="signed-icon long">
-                    <img src="./imgs/logos/spain.png" class="icon" />
-                    <p> Język Hiszpański </p>
-                </div>
-                <div class="rating-line"></div>
+            <div class="hobby-block color2 last-block">
+                <img class="hobby-icon" src="./imgs/icons/rocket.png" />
+                <p class="hobby-title"> Astronomia </p>
             </div>
 
         </div>
 
-        <div class="title-header" id="other-skills-p">
-            <div class="line-title"> <div class="hue"> Inne umiejętności </div> </div>
-            <div class="split-line hue"></div>
-        </div>
-
-        <ul id="other-skills">
-            <li> Montaż i demontaż komputera PC oraz laptopów </li>
-            <li> Obsługa i konfiguracja routerów oraz switchy </li>
-            <li> Obsługa Windows Server 2012 lub starszy, obsługa Linux Ubuntu Server 18.04 </li>
-            <li> Hostowanie i administracja stron internetowych </li>    
-            <li> Programowanie mikrokontrolerów takich jak arduino czy raspberry pi </li>    
-            <li> Obsługa pakietu Office (Posiadam certyfikat ECDL Base) </li>
-        </ul>
-
-        <div class="title-header" id="experience-p">
-            <div class="line-title hue"> Doświadczenie </div>
-            <div class="split-line hue"></div>
-        </div>
-
-
-        <ul id="experience">
-            <li> Praktyka zawodowa ABB Sp. z o.o. - Projektowanie panelu zarządzania na frameworku flask (1 miesiąc) </li>
-            <li> Praktyka zawodowa Titanite Games -  Praca w zespole nad grą komputerową w C# na silniku Unity (1 miesiąc) </li>
-            <li> Praktyka zawodowa Itel Sp. z o.o. - Montaż sieci LAN / zaopatrzenie sprzętowe / programowanie sterowników kontroli dostępu (3 miesiące) </li>
-        </ul>
-
-        <div class="title-header" id="education-p">
-            <div class="line-title hue"> Wykształcenie </div>
-            <div class="split-line hue"></div>
-        </div>
-
-        <ul id="education">
-            <li> Ukończone Technikum Łączności nr. 14 w Krakowie </li>
-            <li> Kwalifikacja zawodowa EE08 - Montaż i eksploatacja systemów komputerowych i sieci </li>
-            <li> Kwalifikacja zawodowa EE09 - Programowanie, tworzenie i administrowanie stronami internetowymi oraz bazami danych </li>
-        </ul>
-
-
-        <div class="title-header" id="portfolio-p">
-            <div class="line-title"> <div class="hue"> Portfolio i Kontakt </div>  </div>
-            <div class="split-line hue"></div>
-        </div>
-
-        <div class="showcase" id="portfolio">
-
-            <div class="signed-icon con"> 
-                <img src="./imgs/logos/github.png" class="icon" />
-                <a class="img-link" href="https://github.com/Xirax" target="_blank"> Github </a>
+        <div class="section"> Moja Oferta </div>
+        <div class="section-content section-scroll">
+            <div class="section-element">
+                <img src="./imgs//icons/web.png" class="offer-icon" />
+                <p class="section-text"> 
+                    Potrzebujesz strony takiej jak ta? A może innej? Najlepiej żeby było tanio, szybko, z ogarnięciem domeny i hostingu? 
+                    Nie za dużo tych wymagań? Tylko żartuje, napisz do mnie, konsultacja nic nie kosztuje, a to już pierwszy krok do twojej wymarzonej strony ;)
+                </p>
             </div>
 
-            <div class="signed-icon con "> 
-                <img src="./imgs/logos/insta.png" class="icon" />
-                <a class="img-link" href="https://www.instagram.com/agxphotographyy/" target="_blank"> Instagram </a>
+            <div class="section-element">
+                <img src="./imgs//icons/PC.png" class="offer-icon" />
+                <p class="section-text"> 
+                    Masz pomysł na apkę mobilną / webową / desktopową, ale jak słyszysz "programowanie" to cię skręca? Twój problem się właśnie rozwiązał - tu masz programistę. 
+                    Nie bój się napisać nawet z dużym projektem, jeśli nie podołam to zawsze możemy dogadać się na stworzenie większego zespołu lub po prostu doradzę ci gdzie indziej 
+                    możesz udać się z większym kalibrem. Nie zwlekaj, dzisiaj pomysły szybko się przedawniają!
+                </p>
             </div>
 
-            <div class="signed-icon con"> 
-                <img src="./imgs/logos/lin.png" class="icon" />
-                <a class="img-link" href="https://www.linkedin.com/in/aleksander-gacek-39759a225" target="_blank"> LinkedIn </a>
+            <div class="section-element">
+                <img src="./imgs//icons/camera.png" class="offer-icon" />
+                <p class="section-text"> 
+                    Hobbystycznie zajmuję się również fotografią i filmem, realizuje prywatne sesje oraz sesje na imprezach okolicznościowych. Cena zależeć będzie od czasu, miejsca oraz 
+                    "intensywności" wydarzenia (Natężenia robionych zdjęć lub filmów) i jest negocjowalna, jeśli zainteresowałem - zapraszam do kontaktu :) 
+                </p>
+            </div>
+
+            <div class="section-element">
+                <img src="./imgs//icons/doc.png" class="offer-icon" />
+                <p class="section-text"> 
+                    Być może trafiłeś tu, bo szukasz korepetytora z informatyki. Może tego nie lubisz, albo po prostu nauczyciel cię nienawidzi - nie ważne - klasę 
+                    zapewne zdać chcesz. Na szczęście idealnie trafiłeś. Mam dwa filary, które są istotne do nauczania: pasję i wiedzę. Co ciekawe nauczycielom w szkołach
+                    niejednokrotnie obu brakuje. Ukończyłem szkołę techniczną jaką jest Zespół Szkół Łączności, sporo w tej dziedzinie potrafię i z wielką chęcią cię czegoś 
+                    nauczę. Nie zamierzam cię też wykańczać finansowo, rozsądną cenę ustalimy w zalężności od materiału i ilości zajęć oraz ich formy (zdalnie / stacjonarnie).
+                </p>
             </div>
 
         </div>
 
-    </div>
-
+        <div class="section"> Kontakt </div>
+        <div class="contact-section section-scroll">
+                <a href="https://www.instagram.com/agxphotographyy/" target="_blank"> <img src="./imgs/media/insta.png" class="contact-icon" /> </a>
+                <a href="https://www.linkedin.com/in/aleksander-gacek-39759a225" target="_blank"> <img src="./imgs/media/lin.png" class="contact-icon" /> </a>
+                <a href="https://www.facebook.com/profile.php?id=100009830467337" target="_blank"> <img src="./imgs/media/fb.png" class="contact-icon" /> </a>
+                <a> <img src="./imgs/media/gmail.png" class="contact-icon" /> </a>
+        </div>
+        
+        <div id="footer"> ©Copyright by Aleksander Gacek </div>
 </body>
-<script src="./js/MenuConstructor.js"></script>
-<script src="./js/skills.js"></script>
-<script src="./js/elementInViewport.js"></script>
-<script src="./js/animator.js"></script>
-<script src="./js/autoTyper.js"></script>
-<script src="./js/hueWheel.js"></script>
+<script type="text/javascript" src="./js/writer.js"></script>
+<script type="text/javascript" src="./js/curtainController.js"></script>
+<script type="text/javascript" src="./js/menuCreator.js"></script>
 
 </html>

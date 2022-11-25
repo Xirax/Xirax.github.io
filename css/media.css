@@ -1,0 +1,75 @@
+@media(max-width: 1200px){
+    .section-text{
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    .about-icon{
+        width: 160px;
+        height: 160px;
+    }
+
+    .hobby-title{ font-size: 16px; }
+
+    .hobby-icon{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+@media(max-width: 900px){
+    .section-text{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .about-icon{
+        width: 140px;
+        height: 140px;
+    }
+
+    .hobby-title{ font-size: 14px; }
+
+    .hobby-icon{
+        width: 26px;
+        height: 26px;
+    }
+
+    .hobby-block{
+        height: 95px;
+    }
+
+    #welcome-phrase{ font-size: 60px; }
+    
+    #quote{ font-size: 20px; }
+}
+
+@media(max-width: 700px){
+
+    .section{ width: 96%; }
+
+    #hobby-blocks{ width: 96%; }
+
+    .hobby-block{ flex-basis: 33.333%; }
+
+    .section-element{ flex-direction: column; margin-bottom: 90px; }
+
+    .section-content{ width: 96%; }
+
+    .section-text{ margin-left: 0px; }
+
+    .contact-section{ width: 96%; }
+
+    .firs-block{ border-radius: 0 0 0 0; }
+    .last-block{ border-radius: 0 0 0 0; }
+}
+
+@media(max-width: 590px){
+
+    #menu-line{ width: 98%; }
+    .menu-dot > span{ font-size: 16px; }
+
+    #welcome-phrase{ font-size: 34px; }
+    #quote{ font-size: 18px; }
+}

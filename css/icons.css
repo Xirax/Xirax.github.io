@@ -1,0 +1,39 @@
+
+.hobby-icon{
+    width: 38px;
+    height: 38px;
+    object-fit: scale-down;
+}
+
+.about-icon{
+    width: 210px;
+    height: 210px;
+
+    border-radius: 6px;
+    border: 2px solid white;
+
+    object-fit: cover;
+}
+
+
+.offer-icon{
+    width: 65px;
+    height: 65px;
+
+    object-fit: scale-down;
+}
+
+.contact-icon{
+    width: 65px;
+    height: 65px;
+
+    object-fit: scale-down;
+
+    border-radius: 6px;
+    transition: ease-in-out .15s;
+}
+
+.contact-icon:hover{
+    transform: rotate(12deg);
+}
+

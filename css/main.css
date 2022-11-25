@@ -1,86 +1,54 @@
-body, html{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+html, body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     margin: 0;
     padding: 0;
 
-    /* background-image: url('../imgs/backgorunds/dustBack.jpg'); */
-    /* background-color: var(--primaryColor); */
-    background-image: url('../imgs/backgorunds/blur2.jpg');
+    font-family: 'Inter', sans-serif;
 
-    background-size: 101% 101%;
+
+    --bcgColor: #413939; 
+    --secColor: #4F4848;
+    --secLightColor: #575050;
+
+    
+    background-color: var(--bcgColor); 
+
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 
-    --primaryColor: #242424;
-    --secondaryColor: #a6a6a6;
-    --accentColor: #de8354;
+    box-sizing: border-box;
+}
 
-    overflow: hidden;
+
+#footer{
+    display: block;
+
+    margin-top: 350px;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+
+    box-sizing: border-box;
+    padding-right: 30px;
+    
+    background-color: var(--secLightColor);
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
 }
 
 a{
     text-decoration: none;
-    color: var(--secondaryColor);
 }
 
 
-
-#header{
-    width: 96%;
-    height: 90px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-
-    box-sizing: border-box;
-
-    z-index: 1;
+@keyframes color-rotate {
+    0%{ filter: hue-rotate(0); }
+    100%{ filter: hue-rotate(360deg); }
 }
-
-#header-title{
-    margin-left: 48px;
-    margin-bottom: 12px;
-
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-
-    z-index: 1;
-}
-
-#header-image{
-    width: 72px;
-    height: 72px;
-
-    border-radius: 15px;
-    margin-bottom: 4px;
-    margin-top: 32px;
-    margin-left: 32px;
-
-    border: 2px solid var(--accentColor);
-}
-
-.ints>img{
-    width: 0; height: 0;
-}
-
-.ints>p{
-    opacity: 0;
-}
-
-.con>img{
-    width: 0; height: 0;
-}
-
-.con>a{
-    opacity: 0;
-}
-
-
