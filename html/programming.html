@@ -25,12 +25,62 @@
 
     <div class="section back section-scroll"> ../index.html </div>
     <div id="first-section" class="section section-scroll"> Projekty </div>
-    <div id="first-section" class="section section-scroll"> Code Cheatsheet </div>
+
+
+    <div class="section-content">
+
+        <div class="section-element">
+            <img src="../imgs/projects/hypervault.png" class="project-icon" />
+
+            <div>
+                <p class="section-text"> 
+                    <span class="project-title"> Hyper Vault </span>
+                    To mój autorski menedżer haseł działający w pełni lokalnie bez użycia chmury. Zastosowałem szyfrowanie AES256 co daje gwarancję bezpieczeństwa plików
+                </p>
+                <div class="buttons-section">
+                    <a class="button" href="https://github.com/Xirax/HyperVault" target="_blank"> <img src="../imgs/logos/github.png" class="button-icon" /> Github </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="section section-scroll"> Code Cheatsheet </div>
+    <div class="sub-section"> Typescript </div>
+    <div class="subsection-content">
+
+        <div class="code-section">  
+            <img src="../imgs/cheatsheet/TS/tsinstall.PNG" class="code-element" title="click to copy code" onclick="copyCode(1)" id="prev-1" />
+            <span> Intsalowanie kompilatora Typescript </span>
+            <span class="attached-code" id="code-1"> npm install --save-dev typescript </span>
+        </div>
+
+        <div class="code-section">  
+            <img src="../imgs/cheatsheet/TS/initts.PNG" class="code-element" title="click to copy code" onclick="copyCode(2)" id="prev-2" />
+            <span> Inicjowanie środowiska TS (Przygotowanie pliku konfiguracyjnego kompilatora - tsconfig.json) </span>
+            <span class="attached-code" id="code-2"> npx tsc --init </span>
+        </div>
+
+        <div class="code-section">  
+            <img src="../imgs/cheatsheet/TS/tsnodeinstall.PNG" class="code-element" title="click to copy code" onclick="copyCode(3)" id="prev-3" />
+            <span> Instalowanie ts-node, który umożliwia współpracę z nodejs </span>
+            <span class="attached-code" id="code-3"> npm install --save-dev ts-node </span>
+        </div>
+
+        <div class="code-section">  
+            <img src="../imgs/cheatsheet/TS/typesinstall.PNG" class="code-element" title="click to copy code" onclick="copyCode(4)" id="prev-4" />
+            <span> Instalowanie wbudowanych typów dla node (w ten sam sposób możemy zainstalować typy do każdej paczki jeśli tylko ona takowe posiada) </span>
+            <span class="attached-code" id="code-4"> npm install --save-dev @types/node </span>
+        </div>
+
+    </div>
 
     
 </body>
 <script type="text/javascript" src="../js/menuCreator.js"></script>
 <script type="text/javascript" src="../js/curtainController.js"></script>
+<script type="text/javascript" src="../js/codecopy.js"></script>
+
 
 <script>
     manageMenu();

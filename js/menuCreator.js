@@ -27,7 +27,6 @@ function createMenu(){
 }
 
 function goToElement(elementIndex){
-    console.log('GOING TO ' + elementIndex);
     let sections = document.getElementsByClassName('section-scroll');
     let scrollPos = sections[elementIndex].getBoundingClientRect().top + window.pageYOffset - 340;
     window.scrollTo({behavior: "smooth", top: scrollPos});

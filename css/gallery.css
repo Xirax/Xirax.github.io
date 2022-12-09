@@ -1,0 +1,103 @@
+
+#photo-gallery{
+    width: 92%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+
+    transition: ease-in-out .15s;
+}
+
+.photo-frame:hover{
+    border: 4px solid white;
+    filter: brightness(1.2);
+}
+
+
+#big-preview{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    padding-left: 65px;
+    padding-right: 65px;
+    box-sizing: border-box;
+
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+#big-image{
+    width: 72%;
+    object-fit: scale-down;
+}
+
+#settings{
+    width: 28%;
+    height: 100%;
+
+    padding: 65px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#close-button{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+
+    width: 35px;
+    height: 35px;
+
+    text-align: center;
+    line-height: 35px;
+
+    margin-left: auto;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: ease-in-out .15s;
+}
+
+#close-button:hover{
+    color: black;
+    background-color: white;
+}
+
+#parameters{
+    height: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-top: auto;
+}

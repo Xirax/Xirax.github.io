@@ -37,3 +37,45 @@
     transform: rotate(12deg);
 }
 
+
+.project-icon{
+    width: 140px;
+    height: 140px;
+
+    object-fit: scale-down;
+}
+
+.code-element{
+    max-width: 800px;
+    object-fit: scale-down;
+
+    border-radius: 6px;
+
+    transition: ease-in-out .15s;
+
+    margin-bottom: 8px;
+}
+
+.code-element:hover{
+    transform: scale(1.08);
+}
+
+.button-icon{
+    width: 24px;
+    height: 24px;
+
+    object-fit: scale-down;
+
+    margin-right: 12px;
+}
+
+.refade{
+    animation: refade;
+    animation-duration: 4s;
+}
+
+@keyframes refade {
+    0%{ filter: grayscale(1); opacity: 0.4; }
+    100%{ filter: grayscale(0); opacity: 1; }
+}
+
