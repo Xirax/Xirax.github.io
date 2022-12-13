@@ -1,13 +1,25 @@
 .section{
     width: 92%;
 
-    margin-top: 350px;
+    margin-top: 240px;
     padding-bottom: 30px;
     font-size: 36px;
     font-weight: bold;
     color: white;
 
-    border-bottom: 2px solid var(--secLightColor);
+    border-bottom: 2px solid rgba(var(--accentColor), 0.45);
+    text-align: center;
+}
+
+.sub-section{
+    width: 92%;
+    margin-top: 65px;
+    padding-bottom: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+
+    border-bottom: 2px solid rgba(var(--accentColor), 0.45);
     text-align: center;
 }
 
@@ -51,23 +63,6 @@
     justify-content: space-around;
 }
 
-
-.project-title{
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.sub-section{
-    width: 78%;
-    margin-top: 110px;
-    padding-bottom: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-
-    border-bottom: 2px solid var(--secLightColor);
-    text-align: center;
-}
 
 .subsection-content{
     width: 76%;

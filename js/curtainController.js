@@ -1,16 +1,9 @@
 CURTAIN_STATE = true
 
 function curtainUp(){
-    let menu = document.getElementById('menu');
-    menu.scrollIntoView({ behavior: "smooth" });
+    let menu = document.getElementById('content-main');
+    menu.scrollIntoView({ behavior: "smooth", block: 'start' });
 }
-
-document.addEventListener('wheel', (ev) => {
-    if(CURTAIN_STATE && ev.deltaY > 0) {
-        curtainUp();
-        CURTAIN_STATE = false;
-    }
-})
 
 window.onscroll = function() {
     manageCurtain();

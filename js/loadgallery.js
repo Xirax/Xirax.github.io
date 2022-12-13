@@ -1,50 +1,48 @@
+const MAX_PHOTOS_AT_TIME = 5;
+const LAST_PHOTO = 19;
 
-function loadGallery(photoCtn=0){
-    let gallery = document.getElementById('photo-gallery');
+let GALLERY_FIRST_PHOTO = 1;
+let ACTIVE_PHOTO = 1;
 
-    for(let i=1; i<=photoCtn; i++){
-        let miniURL = '../imgs/gallery/miniatures/' + i + '.jpg';
-        let photoURL = '../imgs/gallery/original/' + i + '.JPG';
+
+function loadGallery(first, last){
+    let gallery = document.getElementById('gallery');
+    let imagesCount = last - first;
+
+    gallery.innerHTML = '<div class="slide-button bleft"> &#60; </div>';
+
+    for(let i=first; i<=imagesCount; i++){
+        let imgURL = '../imgs/gallery/' + i + '.jpg';
         let img = document.createElement('img');
-        img.classList.add('photo-frame');
-        img.src = miniURL;
-        img.onclick = () => { showImage(photoURL) }
+        img.src = imgURL;
+        img.classList.add('image');
+        if(i == ACTIVE_PHOTO) img.classList.add('active');
 
         gallery.appendChild(img);
     }
+
+    gallery.innerHTML += '<div class="slide-button bright"> > </div>';
 }
 
-loadGallery(20);
+function loadPreview(){
+    let imgURL = '../imgs/gallery/' + ACTIVE_PHOTO + '.jpg';
+    document.getElementById('preview-image').src = imgURL;
 
-
-
-function showImage(imgURL){
-    document.getElementById('big-preview').style.display = 'flex';
-    let imgFrame = document.getElementById('big-image');
-    imgFrame.src = imgURL;
-
-    loadDetails(imgURL)
+    let active = document.getElementsByClassName('active');
+    for(let i=0; i<active.length; i++) active[i].classList.remove('active');
 }
 
-async function loadDetails(imgURL){
-    let detailsURL = '..' + imgURL.split('.')[2] + '.txt';
-    console.log(detailsURL);
-    let file = await fetch(detailsURL); 
-    let details = await file.text();
-    details = details.split('\n');
-
-    document.getElementById('parameters').innerHTML = "";
-
-    for(let i=0; i<details.length; i++){
-        details[i].replace('\r', '');
-        console.log(details[i]);
-        let param = document.createElement('span');
-        param.innerText = details[i];
-
-        document.getElementById('parameters').appendChild(param);
-    }
+function nextPhoto(){
+    ACTIVE_PHOTO++;
+    if(ACTIVE_PHOTO > LAST_PHOTO) ACTIVE_PHOTO = 1;
+    loadPreview();
 }
 
-function closePreview(){
-    document.getElementById('big-preview').style.display = 'none';
+function previousPhoto(){
+    ACTIVE_PHOTO--;
+    if(ACTIVE_PHOTO < 1) ACTIVE_PHOTO = LAST_PHOTO;
+    loadPreview();
 }
+
+
+loadGallery(1, 6);

@@ -2,8 +2,6 @@
 #hobby-blocks{
     width: 92%;
 
-    background-color: rgb(64, 56, 56);
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -51,11 +49,11 @@
 
 
 .color1{
-    background-color: var(--secLightColor);
+    background-color: rgba(var(--accentColor), 0.45);
 }
 
 .color2{
-    background-color: var(--secColor);
+    background-color: rgba(var(--accentColor), 0.45);
 }
 
 .clickable{
@@ -63,5 +61,5 @@
 }
 
 .clickable:hover{
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: rgba(var(--accentColor), 0.6);
 }

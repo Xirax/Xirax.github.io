@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
-html{
+html, body{
     width: 100%;
     height: 100vh;
 
@@ -8,23 +8,16 @@ html{
     padding: 0;
 
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 }
 
-body{
+#content, #content-main{
     width: 100%;
-    height: 100vh;
 
-    margin: 0;
-    padding: 0;
+    --bcgColor: rgba(46, 46, 46, 0.88); 
+    --accentColor: 252, 127, 95;
+    --secLightColor: #FC7F5F;
 
-    font-family: 'Inter', sans-serif;
-
-
-    --bcgColor: #413939; 
-    --secColor: #4F4848;
-    --secLightColor: #575050;
-
-    
     background-color: var(--bcgColor); 
 
 
@@ -33,6 +26,12 @@ body{
     align-items: center;
 
     box-sizing: border-box;
+
+    backdrop-filter: blur(3px);
+}
+
+#content{
+    height: 100vh;
 }
 
 
@@ -47,7 +46,7 @@ body{
     box-sizing: border-box;
     padding-right: 30px;
     
-    background-color: var(--secLightColor);
+    background-color: rgba(var(--accentColor), 0.45);
     color: white;
     font-size: 18px;
     line-height: 40px;

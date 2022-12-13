@@ -16,129 +16,55 @@
 
 </head>
 <body>
+    <div id="landing-page"></div>
+    <div id="filter">
+        <p id="landing-phrase" style="animation-delay: 0.8s;"> Your product </p>
+        <p id="landing-phrase" style="animation-delay: 1.6s;"> My Camera </p>
+        <p id="landing-phrase" style="animation-delay: 2.4s;"> Today.</p>
 
-        <div id="landing-page">
-            <div id="filter">
-                <p id="welcome-phrase"> </p>
-                <p id="quote"></p>
                 <img id="page-arrow" src="./imgs/icons/arrow.png" onclick="curtainUp()"/>
-            </div>
-        </div>
+    </div>
 
-        <div style="width: 100%;">
+    <div id="content-main">
+
+        <!-- <div style="width: 100%;">
             <div id="menu">
             
                 <div id="menu-line"></div>
-    
-                <!-- <div id="hamburger-icon">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </div> -->
             </div>
-        </div>
+        </div> -->
 
  
-
-
         <div id="first-section" class="section"> O mnie </div>
         <div class="section-content section-scroll">
             <div class="section-element">
-                <img src="./imgs/people/me.jpg" class="about-icon" />
+                <img src="./imgs/people/me2.jpg" class="about-icon" />
                 <p class="section-text">
-                    Mam na imię Aleksander, informatyka zainteresowała mnie mniej więcej w momencie kiedy się urodziłem. Szybko wpadłem w jej wir i zorientowałem się, że to
-                    będzie coś, co będę chciał robić w życiu. Zacząłem chłonąć wiedzę dniami i nocami a im więcej wiedziałem tym bardziej nabierałem przeświadczenia, że nic nie wiem.
-                    Ukończyłem Technikum Łączności i obecnie szukam pracy w swoim zawodzie. Mocno wierzę, że mi się uda, bo byłoby bardzo fajnie móc "nie przepracować ani jednego 
-                    dnia życia". W międzyczasie żeby się nie nudzić stworzyłem tą stronę i zamierzam ją stopniowo rozwijać aby stała się czymś więcej niż tylko wizytówką.
+                    Mam na imię Aleksander, zajmuję się profesjonalną fotografią produktową / reklamową. Mogę poprawić twoją sprzedaż dostarczając zdjęcia, które natychmiast przykują 
+                    uwagę klientów niezależnie od tego jaki produkt sprzedajesz - jeśli tylko zmieści się na moim planie fotograficznym (Na ten moment jest to 100cm x 100cm x 100cm).
+                    Zapraszam do obejrzenia mojego portfolio oraz kontaktu.
                 </p>
             </div>
         </div>
 
-        <div class="section"> Hobby </div>
+        <!-- <div class="section"> Portfolio </div> -->
 
         <div id="hobby-blocks" class="section-scroll"> 
 
-            <div class="hobby-block color1 clickable firs-block">
-                <img class="hobby-icon" src="./imgs/icons/tech.png" />
-                <p class="hobby-title"> Informatyka </p>
-            </div>
+            <a class="hobby-block color1 clickable firs-block" href="./html/portfolio.html">
+                <img class="hobby-icon" src="./imgs/icons/shutter.png" />
+                <p class="hobby-title"> Moje fotografie </p>
+            </a>
 
-            <a class="hobby-block color2 clickable" href="./html/programming.html">
+            <!-- <a class="hobby-block color2 clickable" href="./html/programming.html">
                 <img class="hobby-icon" src="./imgs/icons/program.png" />
-                <p class="hobby-title"> Programowanie </p>
+                <p class="hobby-title"> Za kulisami </p>
             </a>
 
             <a class="hobby-block color1 clickable" href="./html/photography.html">
                 <img class="hobby-icon" src="./imgs/icons/camera.png" />
-                <p class="hobby-title"> Fotografia </p>
-            </a>
-
-            <div class="hobby-block color2">
-                <img class="hobby-icon" src="./imgs/icons/film.png" />
-                <p class="hobby-title"> Kinematografia </p>
-            </div>
-
-            <div class="hobby-block color1">
-                <img class="hobby-icon" src="./imgs/icons/plane.png" />
-                <p class="hobby-title"> Lotnictwo </p>
-            </div>
-
-            <div class="hobby-block color2 last-block">
-                <img class="hobby-icon" src="./imgs/icons/rocket.png" />
-                <p class="hobby-title"> Astronomia </p>
-            </div>
-
-        </div>
-
-        <div class="section"> Moja Oferta </div>
-        <div class="section-content section-scroll">
-            <div class="section-element">
-                <img src="./imgs/icons/web.png" class="offer-icon" />
-                <p class="section-text"> 
-                    Potrzebujesz strony internetowej? Najlepiej żeby było tanio, szybko, z ogarnięciem domeny i hostingu? 
-                    Napisz do mnie, konsultacja nic nie kosztuje, a to już pierwszy krok do twojej wymarzonej strony.
-                </p>
-            </div>
-
-            <div class="section-element">
-                <img src="./imgs/icons/PC.png" class="offer-icon" />
-                <p class="section-text"> 
-                    Masz pomysł na apkę mobilną / webową / desktopową, ale jak słyszysz "programowanie" to cię skręca? Tu masz programistę. 
-                    Nie bój się napisać nawet z dużym projektem, jeśli nie podołam to zawsze możemy dogadać się na stworzenie większego zespołu lub po prostu doradzę ci gdzie indziej 
-                    możesz udać się z większym kalibrem. Nie zwlekaj, dzisiaj pomysły szybko się przedawniają!
-                </p>
-            </div>
-
-            <div class="section-element">
-                <img src="./imgs/icons/camera.png" class="offer-icon" />
-                <p class="section-text"> 
-                    Hobbystycznie zajmuję się również fotografią i filmem, realizuje prywatne sesje oraz sesje na imprezach okolicznościowych. Cena zależeć będzie od czasu, miejsca oraz 
-                    "intensywności" wydarzenia (Natężenia robionych zdjęć lub filmów) i jest negocjowalna, jeśli zainteresowałem - zapraszam do kontaktu. Jeśli nie - polecam swoje 
-                    portfolio w zakładce "fotografia".
-                </p>
-            </div>
-
-            <div class="section-element">
-                <img src="./imgs/icons/doc.png" class="offer-icon" />
-                <p class="section-text"> 
-                    Jeśli szukasz korepetytora informatyki to idealnie trafiłeś. Mam dwa filary, które są istotne do nauczania: pasję i wiedzę. Co ciekawe nauczycielom w szkołach
-                    niejednokrotnie obu brakuje. Ukończyłem szkołę techniczną jaką jest Zespół Szkół Łączności, sporo w tej dziedzinie potrafię i z wielką chęcią cię czegoś 
-                    nauczę. Nie zamierzam cię też wykańczać finansowo, rozsądną cenę ustalimy w zalężności od materiału i ilości zajęć oraz ich formy (zdalnie / stacjonarnie).
-                </p>
-            </div>
-
-            <div class="section-element">
-                <img src="./imgs/icons/PC construct.png" class="offer-icon" />
-                <p class="section-text"> 
-                    Chciałbyś złożyć komputer stacjonarny ale nie znasz się na tym? Szukasz coś z rtx i widzisz 8000zł?
-                    No właśnie, ja też się zastanawiam o co tu chodzi, taniej laptop wyjdzie. Z tym, że to nie prawda, w sklepach wciskają nam kitowe komponenty w wysokich cenach i
-                    reklamują go nową kartą nvidii. Składając komputer musisz myśleć o wszystkich jego elementach. 
-                    Ja swój złożyłem bez RTX'a w śmiesznie niskiej cenie a odpalam jaką grę tylko chcę. Pobieram tylko 7% prowizji 
-                    za znalezienie komponentów i złożenie dla Ciebie komputera do twoich preferencji i budżetu. 
-                    Zaoszczędzę ci znacznie więcej a ty będziesz miał na biurku rakietę w kilka dni od kontaktu ze mną. "Ale Pan w sklepie za darmo mi podpowie!" - Ta? No to sobie wydawaj na te komputery 
-                    co ci podpowie jak cię stać. 
-                </p>
-            </div>
+                <p class="hobby-title"> Inne fotografie </p>
+            </a> -->
 
         </div>
 
@@ -147,10 +73,12 @@
                 <a href="https://www.instagram.com/agxphotographyy/" target="_blank"> <img src="./imgs/media/insta.png" class="contact-icon" /> </a>
                 <a href="https://www.linkedin.com/in/aleksander-gacek-39759a225" target="_blank"> <img src="./imgs/media/lin.png" class="contact-icon" /> </a>
                 <a href="https://www.facebook.com/profile.php?id=100009830467337" target="_blank"> <img src="./imgs/media/fb.png" class="contact-icon" /> </a>
+                <a href="https://www.facebook.com/profile.php?id=100009830467337" target="_blank"> <img src="./imgs/media/whatsapp.png" class="contact-icon" /> </a>
                 <a> <img src="./imgs/media/gmail.png" class="contact-icon" /> </a>
         </div>
         
         <div id="footer"> ©Copyright by Aleksander Gacek </div>
+    </div>
 </body>
 <script type="text/javascript" src="./js/writer.js"></script>
 <script type="text/javascript" src="./js/curtainController.js"></script>

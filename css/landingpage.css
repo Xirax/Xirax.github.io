@@ -1,32 +1,40 @@
 
 #landing-page{
 
+    position: fixed;
     display: block;
 
     height: 100vh;
     width: 100%;
 
-    background-image: url('../imgs/bcg/ITB.jpg');
+    background-image: url('../imgs/bcg/landing2.jpg');
 
     background-size: cover;
     background-attachment: fixed;
 
     box-sizing: border-box;
+
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+    z-index: -1;
 }
 
 #filter{
-    position: relative;
-    top: 0;
-    left: 0;
+
+    padding-top: 150px;
 
     height: 100vh;
     width: 100%;
 
-    background-color: rgba(64, 56, 56, 0.84); 
+    /* background-color: rgba(64, 56, 56, 0.84);  */
+    background-color: rgba(46, 46, 46, 0.82); 
 
-    animation-name: transparency-in;
+    
+    /* animation-name: transparency-in;
     animation-fill-mode: forwards;
-    animation-duration: 4s;
+    animation-duration: 4s; */
 
     display: flex;
     flex-direction: column;
@@ -36,12 +44,18 @@
     box-sizing: border-box;
 }
 
-#welcome-phrase{
+#landing-phrase{
     font-size: 76px;
     font-weight: bold;
     color: white;
     margin-bottom: 12px;
     text-align: center;
+
+    animation-name: fade-in, size-in;
+    animation-duration: 6.5s, 2s;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
 }
 
 #quote{
@@ -64,9 +78,8 @@
 }
 
 #page-arrow{
-    position: absolute;
-    bottom: 25px;
-    left: calc(50% - 32.5px);
+
+    margin-top: auto;
 
     z-index: 10;
 
@@ -110,13 +123,24 @@
 }
 
 @keyframes float {
-    0%{ bottom: 25px; }
-    50%{ bottom: 18px; }
-    100%{ bottom: 25px; }
+    0%{ margin-bottom: 0px; }
+    50%{ margin-bottom: 12px; }
+    100%{ margin-bottom: 0px; }
 }
 
 @keyframes blink {
     0%{ opacity: 1; }
     50%{ opacity: 0; }
     100%{ opacity: 1; }
+}
+
+
+@keyframes slide-in {
+    0%{ margin-left: -110%; }
+    100%{ margin-left: 0; }
+}
+
+@keyframes size-in {
+    0%{ font-size: 0; }
+    100%{ font-size: 76px; }
 }
